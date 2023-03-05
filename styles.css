@@ -3,10 +3,11 @@
     border: 1px solid red;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    min-width: 800px;
 }
 
 /* HEADER SECTION CSS */
@@ -49,7 +50,7 @@ a {
     color: #F9FAF8;
 }
 
-.hero-section{
+.hero-section {
     max-width: 800px;
     height: auto;
     display: flex;
@@ -57,7 +58,7 @@ a {
     margin: 80px auto;
 }
 
-.hero-text{
+.hero-text {
     max-width: 50%;
     display: flex;
     flex-direction: column;
@@ -65,19 +66,19 @@ a {
     flex: 1;
 }
 
-.main-text{
+.main-text {
     font-size: 48px;
     font-weight: bolder;
     margin: 0;
 }
 
-.secondary-text{
+.secondary-text {
     font-size: 18px;
     color: #E5E7EB;
     margin: 0;
 }
 
-button{
+button {
     width: fit-content;
     margin-top: 20px;
     padding: 5px 15px;
@@ -96,17 +97,49 @@ button{
 }
 
 /* INFORMATION SECTION */
-.information{
+.information {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.information-header{
+.information-header {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
     display: flex;
     margin: 60px;
     width: fit-content;
+}
+
+.info-container {
+    display: flex;
+    max-width: 100%;
+    width: 1200px;
+    min-width: 0;
+    height: auto;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex: 1 1 auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    flex: 0 1 150px;
+}
+
+.info img {
+    height: 150px;
+    max-width: 100%;
+    min-width: 0;
+    flex: 0 1 150px;
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+}
+
+.info p{
+    text-align: center;
 }
