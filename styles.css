@@ -5,6 +5,8 @@
 
 body{
     display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 /* HEADER SECTION CSS */
@@ -19,10 +21,9 @@ body{
 
 .top-section {
     display: flex;
-    flex-direction: row;
     font-size: 24px;
     padding: 0;
-    margin: 10px 90px 10px 40px;
+    margin: 10px 40px 10px 40px;
     justify-content: space-between;
     align-items: center;
 }
@@ -46,13 +47,13 @@ a {
 }
 
 .hero-section{
+    width: 800px;
     display: flex;
     justify-content: center;
     margin: 80px auto;
 }
 
 .hero-text{
-    width: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -85,4 +86,21 @@ button{
 .hero-img {
     width: 400px;
     height: 300px;
+    flex: 1 0 auto;
+}
+
+/* INFORMATION SECTION */
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information-header{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    display: flex;
+    margin: 60px;
+    width: fit-content;
 }
