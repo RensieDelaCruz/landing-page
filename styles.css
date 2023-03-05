@@ -39,6 +39,9 @@ ul {
     margin: 0;
     padding: 0;
     gap: 24px;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    min-width: 0;
 }
 
 a {
@@ -47,25 +50,28 @@ a {
 }
 
 .hero-section{
-    width: 800px;
+    max-width: 800px;
+    height: auto;
     display: flex;
     justify-content: center;
     margin: 80px auto;
 }
 
 .hero-text{
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 1;
 }
 
-.main.hero-text{
+.main-text{
     font-size: 48px;
     font-weight: bolder;
     margin: 0;
 }
 
-.secondary.hero-text{
+.secondary-text{
     font-size: 18px;
     color: #E5E7EB;
     margin: 0;
@@ -84,9 +90,9 @@ button{
 }
 
 .hero-img {
-    width: 400px;
+    max-width: 400px;
     height: 300px;
-    flex: 1 0 auto;
+    flex: 1;
 }
 
 /* INFORMATION SECTION */
